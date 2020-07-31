@@ -1,40 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xgC-DS-8Uz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qfp-Bn-a2G">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo Event Managment-->
+        <!--Event View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="event" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EventViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Photo Event Managment" id="t9J-SS-lGU">
+                    <navigationItem key="navigationItem" id="t9J-SS-lGU">
                         <barButtonItem key="backBarButtonItem" title=" " id="iDK-VQ-61m"/>
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" landscapeImage="menu" largeContentSizeImage="menu" style="done" id="2Wd-GB-NWk"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="settings" landscapeImage="settings" largeContentSizeImage="settings" style="plain" id="S0K-In-bfi">
-                            <connections>
-                                <segue destination="pGR-eg-kgt" kind="show" id="nsp-fK-QXL"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042.0289855072465" y="115.84821428571428"/>
+            <point key="canvasLocation" x="2361" y="-314"/>
         </scene>
-        <!--View Controller-->
+        <!--Equipment View Controller-->
+        <scene sceneID="xcZ-Wr-R3C">
+            <objects>
+                <viewController storyboardIdentifier="equipment" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ijK-uG-S8s" customClass="EquipmentViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wAo-fD-dhy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kXv-Ai-n5s"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vZ9-64-OQg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aei-lp-hqL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3212" y="-739"/>
+        </scene>
+        <!--Staff View Controller-->
         <scene sceneID="RxW-YA-Xo1">
             <objects>
-                <viewController id="pGR-eg-kgt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="staff" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pGR-eg-kgt" customClass="StaffViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pkv-Qh-zzO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,43 +57,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6a-Al-i7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1765" y="116"/>
+            <point key="canvasLocation" x="3212" y="-22"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="UCa-1v-jjV">
+        <!--Customer View Controller-->
+        <scene sceneID="KuP-aO-Pal">
             <objects>
-                <tableViewController id="xgC-DS-8Uz" customClass="TableViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qEs-Am-Prs">
+                <viewController storyboardIdentifier="customer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kv8-l5-GpC" customClass="CustomerViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zjz-rE-fo0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="2Wk-wU-Bp7" customClass="ScheduleTableViewCell" customModule="PhotoEvents" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2Wk-wU-Bp7" id="dQ7-vL-etV">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="xgC-DS-8Uz" id="CEJ-3F-Yfy"/>
-                            <outlet property="delegate" destination="xgC-DS-8Uz" id="4Vx-gj-QAT"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4zO-c2-tpJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <viewLayoutGuide key="safeArea" id="npz-tX-bje"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WV6-5e-13m"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Whn-i4-ZoI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2521" y="141"/>
+            <point key="canvasLocation" x="2361" y="591"/>
+        </scene>
+        <!--Setting View Controller-->
+        <scene sceneID="Jgi-DB-grA">
+            <objects>
+                <viewController storyboardIdentifier="setting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SN6-c1-2M7" customClass="SettingViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NOo-xo-dkk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="x7a-sm-OmQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0kZ-aw-EzZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h9C-JK-RaA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3212" y="708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v1Q-7I-wwk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qfp-Bn-a2G" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBarsOnSwipe="YES" id="qfp-Bn-a2G" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rmZ-c3-P3G">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="rmZ-c3-P3G">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.26889451933852271" green="0.27401159739754472" blue="0.67194809394467003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -93,17 +109,127 @@
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jPd-za-anC">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YEc-8w-ZpT"/>
+                        <segue destination="HcF-wG-ZRg" kind="relationship" relationship="rootViewController" id="5Sx-SM-3iu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WdK-OS-QOU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </scene>
+        <!--Calendar-->
+        <scene sceneID="gSQ-T1-H8x">
+            <objects>
+                <viewController id="HcF-wG-ZRg" customClass="CalendarViewController" customModule="PhotoEvents" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7bm-dk-udn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="D7e-KG-FYg">
+                                <rect key="frame" x="0.0" y="164" width="414" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="1vF-eh-CUN"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="4" minimumInteritemSpacing="0.0" id="7Pd-qh-okg">
+                                    <size key="itemSize" width="50" height="70"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="N4G-zP-8pB" customClass="DateCollectionViewCell" customModule="PhotoEvents" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FKJ-wD-6Mi">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Mkt-ww-znG">
+                                <rect key="frame" x="5" y="254" width="404" height="608"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zck-pK-g6H">
+                                <rect key="frame" x="20" y="98" width="374" height="36"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kGn-ac-Ojd">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" image="left-arrow"/>
+                                        <connections>
+                                            <action selector="calenderNavigation:" destination="HcF-wG-ZRg" eventType="touchUpInside" id="237-XH-1T1"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xua-OO-wh3">
+                                        <rect key="frame" x="162" y="7.5" width="50.5" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                        <color key="textColor" name="ToDoBackground"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4BN-RR-YGw">
+                                        <rect key="frame" x="354" y="0.0" width="20" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" image="right-arrow"/>
+                                        <connections>
+                                            <action selector="calenderNavigation:" destination="HcF-wG-ZRg" eventType="touchUpInside" id="wiG-jy-SXS"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="5eZ-J3-dul"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="D7e-KG-FYg" firstAttribute="top" secondItem="Zck-pK-g6H" secondAttribute="bottom" constant="30" id="0zm-qu-frf"/>
+                            <constraint firstItem="1Bg-Qp-YbM" firstAttribute="trailing" secondItem="Mkt-ww-znG" secondAttribute="trailing" constant="5" id="8x8-11-llg"/>
+                            <constraint firstItem="Zck-pK-g6H" firstAttribute="top" secondItem="1Bg-Qp-YbM" secondAttribute="top" constant="10" id="Dc3-nU-JyF"/>
+                            <constraint firstItem="D7e-KG-FYg" firstAttribute="leading" secondItem="1Bg-Qp-YbM" secondAttribute="leading" id="P9y-aB-caR"/>
+                            <constraint firstItem="1Bg-Qp-YbM" firstAttribute="trailing" secondItem="Zck-pK-g6H" secondAttribute="trailing" constant="20" id="Umn-mN-a9K"/>
+                            <constraint firstItem="Mkt-ww-znG" firstAttribute="bottom" secondItem="1Bg-Qp-YbM" secondAttribute="bottom" id="gFH-cX-jiA"/>
+                            <constraint firstItem="Mkt-ww-znG" firstAttribute="leading" secondItem="1Bg-Qp-YbM" secondAttribute="leading" constant="5" id="jzI-x2-7Fe"/>
+                            <constraint firstItem="Mkt-ww-znG" firstAttribute="top" secondItem="D7e-KG-FYg" secondAttribute="bottom" constant="20" id="s9X-df-D3m"/>
+                            <constraint firstItem="1Bg-Qp-YbM" firstAttribute="trailing" secondItem="D7e-KG-FYg" secondAttribute="trailing" id="tSO-cj-r9K"/>
+                            <constraint firstItem="Zck-pK-g6H" firstAttribute="leading" secondItem="1Bg-Qp-YbM" secondAttribute="leading" constant="20" id="w28-iC-yTx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Bg-Qp-YbM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calendar" largeTitleDisplayMode="never" id="OaJ-jq-aMC">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menu" id="mgG-L3-cb8">
+                            <connections>
+                                <action selector="sideManuLoad:" destination="HcF-wG-ZRg" id="5c9-xS-x8B"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="calendarCollectionView" destination="D7e-KG-FYg" id="Skj-Mc-jJK"/>
+                        <outlet property="monthYearLabel" destination="xua-OO-wh3" id="4ja-zh-0R2"/>
+                        <outlet property="workOrderTableView" destination="Mkt-ww-znG" id="2ef-8d-aOw"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="" id="CTk-FW-ash"/>
+                        <segue destination="pGR-eg-kgt" kind="show" identifier="" id="eHN-fz-xjm"/>
+                        <segue destination="kv8-l5-GpC" kind="show" id="gk0-9d-nYx"/>
+                        <segue destination="ijK-uG-S8s" kind="show" id="eOg-Vi-ZvU"/>
+                        <segue destination="SN6-c1-2M7" kind="show" id="i1i-wr-hbW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9fT-Yw-3pA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="116"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="left-arrow" width="20" height="20"/>
         <image name="menu" width="24" height="24"/>
-        <image name="settings" width="24" height="24"/>
+        <image name="right-arrow" width="20" height="20"/>
+        <namedColor name="ToDoBackground">
+            <color red="0.20399999618530273" green="0.59600001573562622" blue="0.85900002717971802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

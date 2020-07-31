@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,16 +15,24 @@
 		CE3BDB3F24CC0742008684A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3BDB3E24CC0742008684A4 /* Assets.xcassets */; };
 		CE3BDB4224CC0742008684A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3BDB4024CC0742008684A4 /* LaunchScreen.storyboard */; };
 		CE3BDB4D24CC0AFD008684A4 /* Staffs.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BDB4C24CC0AFD008684A4 /* Staffs.swift */; };
-		CEC9A5F524D1F60200E48A8C /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC9A5F424D1F60200E48A8C /* TableViewController.swift */; };
+		CE9D60C024D416DF0055DA67 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60BF24D416DF0055DA67 /* MenuViewController.swift */; };
+		CE9D60C224D421D50055DA67 /* StaffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60C124D421D50055DA67 /* StaffViewController.swift */; };
+		CE9D60C424D421E50055DA67 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60C324D421E50055DA67 /* EventViewController.swift */; };
+		CE9D60C624D46B410055DA67 /* CustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60C524D46B410055DA67 /* CustomerViewController.swift */; };
+		CE9D60C824D46B6A0055DA67 /* EquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60C724D46B6A0055DA67 /* EquipmentViewController.swift */; };
+		CE9D60CA24D46B910055DA67 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9D60C924D46B910055DA67 /* SettingViewController.swift */; };
 		CEFCEEDD24D33E2200D021E0 /* ScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFCEED724D33E2100D021E0 /* ScheduleTableViewCell.xib */; };
-		CEFCEEDE24D33E2200D021E0 /* CalendarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCEED824D33E2100D021E0 /* CalendarCollectionViewController.swift */; };
+		CEFCEEDE24D33E2200D021E0 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCEED824D33E2100D021E0 /* CalendarViewController.swift */; };
 		CEFCEEDF24D33E2200D021E0 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCEED924D33E2100D021E0 /* DateCollectionViewCell.swift */; };
 		CEFCEEE024D33E2200D021E0 /* CalendarSupports.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCEEDA24D33E2100D021E0 /* CalendarSupports.swift */; };
 		CEFCEEE124D33E2200D021E0 /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEFCEEDB24D33E2100D021E0 /* DateCollectionViewCell.xib */; };
-		CEFCEEE224D33E2200D021E0 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCEEDC24D33E2200D021E0 /* ScheduleTableViewCell.swift */; };
+		CEFCEEE424D34A5D00D021E0 /* ScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFCEEE324D34A5D00D021E0 /* ScheduleTableViewCell.swift */; };
+		F3C970D2605B14C2E5C949F1 /* Pods_PhotoEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A76AE8B5916A2BF109C50B7B /* Pods_PhotoEvents.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08F93BDF81DAFF358C221D95 /* Pods-PhotoEvents.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEvents.release.xcconfig"; path = "Target Support Files/Pods-PhotoEvents/Pods-PhotoEvents.release.xcconfig"; sourceTree = "<group>"; };
+		A76AE8B5916A2BF109C50B7B /* Pods_PhotoEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2F8A5A24D1EF3400C08A5F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CE3BDB3224CC073C008684A4 /* PhotoEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3BDB3524CC073C008684A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -35,13 +43,19 @@
 		CE3BDB4124CC0742008684A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3BDB4324CC0742008684A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE3BDB4C24CC0AFD008684A4 /* Staffs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Staffs.swift; sourceTree = "<group>"; };
-		CEC9A5F424D1F60200E48A8C /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CE9D60BF24D416DF0055DA67 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CE9D60C124D421D50055DA67 /* StaffViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffViewController.swift; sourceTree = "<group>"; };
+		CE9D60C324D421E50055DA67 /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		CE9D60C524D46B410055DA67 /* CustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerViewController.swift; sourceTree = "<group>"; };
+		CE9D60C724D46B6A0055DA67 /* EquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentViewController.swift; sourceTree = "<group>"; };
+		CE9D60C924D46B910055DA67 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		CEFCEED724D33E2100D021E0 /* ScheduleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScheduleTableViewCell.xib; sourceTree = "<group>"; };
-		CEFCEED824D33E2100D021E0 /* CalendarCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCollectionViewController.swift; sourceTree = "<group>"; };
+		CEFCEED824D33E2100D021E0 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		CEFCEED924D33E2100D021E0 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
 		CEFCEEDA24D33E2100D021E0 /* CalendarSupports.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarSupports.swift; sourceTree = "<group>"; };
 		CEFCEEDB24D33E2100D021E0 /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
-		CEFCEEDC24D33E2200D021E0 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		CEFCEEE324D34A5D00D021E0 /* ScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		D4E6BED73B1F9EF97B3B203F /* Pods-PhotoEvents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoEvents.debug.xcconfig"; path = "Target Support Files/Pods-PhotoEvents/Pods-PhotoEvents.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C970D2605B14C2E5C949F1 /* Pods_PhotoEvents.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E50BA882DB58B799281B380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4E6BED73B1F9EF97B3B203F /* Pods-PhotoEvents.debug.xcconfig */,
+				08F93BDF81DAFF358C221D95 /* Pods-PhotoEvents.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CCAAFF18333A173936FD28A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A76AE8B5916A2BF109C50B7B /* Pods_PhotoEvents.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE3BDB2924CC073C008684A4 = {
 			isa = PBXGroup;
 			children = (
 				CE3BDB3424CC073C008684A4 /* PhotoEvents */,
 				CE3BDB3324CC073C008684A4 /* Products */,
+				8E50BA882DB58B799281B380 /* Pods */,
+				CCAAFF18333A173936FD28A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,12 +110,6 @@
 			children = (
 				CE3BDB3524CC073C008684A4 /* AppDelegate.swift */,
 				CE3BDB3724CC073C008684A4 /* SceneDelegate.swift */,
-				CEFCEED824D33E2100D021E0 /* CalendarCollectionViewController.swift */,
-				CEFCEEDA24D33E2100D021E0 /* CalendarSupports.swift */,
-				CEFCEED924D33E2100D021E0 /* DateCollectionViewCell.swift */,
-				CEFCEEDB24D33E2100D021E0 /* DateCollectionViewCell.xib */,
-				CEFCEEDC24D33E2200D021E0 /* ScheduleTableViewCell.swift */,
-				CEFCEED724D33E2100D021E0 /* ScheduleTableViewCell.xib */,
 				CE3BDB4B24CC0AC9008684A4 /* Models */,
 				CE3BDB4924CC0A72008684A4 /* Views */,
 				CE3BDB4A24CC0A97008684A4 /* Controllers */,
@@ -95,6 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				CE3BDB3B24CC073C008684A4 /* Main.storyboard */,
+				CEFCEED724D33E2100D021E0 /* ScheduleTableViewCell.xib */,
+				CEFCEEE324D34A5D00D021E0 /* ScheduleTableViewCell.swift */,
+				CEFCEEDB24D33E2100D021E0 /* DateCollectionViewCell.xib */,
+				CEFCEED924D33E2100D021E0 /* DateCollectionViewCell.swift */,
 				CE3BDB4024CC0742008684A4 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -104,7 +136,13 @@
 			isa = PBXGroup;
 			children = (
 				CE3BDB3924CC073C008684A4 /* ViewController.swift */,
-				CEC9A5F424D1F60200E48A8C /* TableViewController.swift */,
+				CEFCEED824D33E2100D021E0 /* CalendarViewController.swift */,
+				CE9D60BF24D416DF0055DA67 /* MenuViewController.swift */,
+				CE9D60C324D421E50055DA67 /* EventViewController.swift */,
+				CE9D60C124D421D50055DA67 /* StaffViewController.swift */,
+				CE9D60C524D46B410055DA67 /* CustomerViewController.swift */,
+				CE9D60C724D46B6A0055DA67 /* EquipmentViewController.swift */,
+				CE9D60C924D46B910055DA67 /* SettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				CE3BDB4C24CC0AFD008684A4 /* Staffs.swift */,
+				CEFCEEDA24D33E2100D021E0 /* CalendarSupports.swift */,
 				CE2F8A5A24D1EF3400C08A5F /* Constants.swift */,
 			);
 			path = Models;
@@ -125,9 +164,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE3BDB4624CC0742008684A4 /* Build configuration list for PBXNativeTarget "PhotoEvents" */;
 			buildPhases = (
+				3073E9BA8355910649303CD0 /* [CP] Check Pods Manifest.lock */,
 				CE3BDB2E24CC073C008684A4 /* Sources */,
 				CE3BDB2F24CC073C008684A4 /* Frameworks */,
 				CE3BDB3024CC073C008684A4 /* Resources */,
+				2FF0DDE79EDA22E1FBB5F36A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,18 +227,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FF0DDE79EDA22E1FBB5F36A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEvents/Pods-PhotoEvents-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhotoEvents/Pods-PhotoEvents-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhotoEvents/Pods-PhotoEvents-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3073E9BA8355910649303CD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhotoEvents-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE3BDB2E24CC073C008684A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CE3BDB3A24CC073C008684A4 /* ViewController.swift in Sources */,
-				CEC9A5F524D1F60200E48A8C /* TableViewController.swift in Sources */,
+				CE9D60C024D416DF0055DA67 /* MenuViewController.swift in Sources */,
 				CE3BDB3624CC073C008684A4 /* AppDelegate.swift in Sources */,
 				CE3BDB4D24CC0AFD008684A4 /* Staffs.swift in Sources */,
-				CEFCEEE224D33E2200D021E0 /* ScheduleTableViewCell.swift in Sources */,
 				CE3BDB3824CC073C008684A4 /* SceneDelegate.swift in Sources */,
-				CEFCEEDE24D33E2200D021E0 /* CalendarCollectionViewController.swift in Sources */,
+				CE9D60CA24D46B910055DA67 /* SettingViewController.swift in Sources */,
+				CE9D60C824D46B6A0055DA67 /* EquipmentViewController.swift in Sources */,
+				CE9D60C424D421E50055DA67 /* EventViewController.swift in Sources */,
+				CE9D60C224D421D50055DA67 /* StaffViewController.swift in Sources */,
+				CE9D60C624D46B410055DA67 /* CustomerViewController.swift in Sources */,
+				CEFCEEDE24D33E2200D021E0 /* CalendarViewController.swift in Sources */,
+				CEFCEEE424D34A5D00D021E0 /* ScheduleTableViewCell.swift in Sources */,
 				CEFCEEE024D33E2200D021E0 /* CalendarSupports.swift in Sources */,
 				CEFCEEDF24D33E2200D021E0 /* DateCollectionViewCell.swift in Sources */,
 				CE2F8A5B24D1EF3400C08A5F /* Constants.swift in Sources */,
@@ -342,6 +430,7 @@
 		};
 		CE3BDB4724CC0742008684A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4E6BED73B1F9EF97B3B203F /* Pods-PhotoEvents.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,6 +449,7 @@
 		};
 		CE3BDB4824CC0742008684A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F93BDF81DAFF358C221D95 /* Pods-PhotoEvents.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

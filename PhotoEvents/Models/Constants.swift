@@ -11,6 +11,8 @@ import UIKit
 struct K {
     static let scheduleTableCell = "scheduleTableCell"
     static let scheduleTableCellNIB = "ScheduleTableViewCell"
+    static let calanderCell = "CalendarCell"
+    static let calanderCellNIB = "DateCollectionViewCell"
     
     struct Colors {
         static let cellBackground = "CellBackground"

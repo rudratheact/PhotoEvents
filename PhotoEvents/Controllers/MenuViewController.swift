@@ -1,15 +1,17 @@
 //
-//  TableViewController.swift
+//  MenuViewController.swift
 //  PhotoEvents
 //
-//  Created by Rudra Misra on 7/29/20.
+//  Created by Rudra Misra on 7/31/20.
 //  Copyright © 2020 Rudra Misra. All rights reserved.
 //
 
 import UIKit
 
-class TableViewController: UITableViewController {
+class MenuViewController: UITableViewController {
 
+    let items = ["Events", "Staffs", "Customers", "Equipments", " ", " ", "Settings"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +20,9 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        tableView.register(UINib(nibName: K.scheduleTableCellNIB, bundle: nil), forCellReuseIdentifier: K.scheduleTableCell)
+        tableView.backgroundColor = UIColor(named: K.Colors.toDoBackground)
+        tableView.separatorColor = UIColor(named: K.Colors.toDoBackground)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     }
 
     // MARK: - Table view data source
@@ -30,27 +34,43 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 15
+        return items.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: K.scheduleTableCell, for: indexPath) as! ScheduleTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
-        cell.clientNameLabel.text = "Hello there"
-        cell.eventLocationLabel.text = "12/34, Alexander Street"
-        cell.eventNameLabel.text = "\(Event.Celebration)"
-        cell.teamMemberLabel.text = "Hello there, Good boy, Bad boy, James Bond"
-        cell.startDateLabel.text = "\(Date())"
-        cell.startTimeLabel.text = "12:34:00"
-
-        if indexPath.row % 2 == 0{
-            cell.cellBody.backgroundColor = UIColor(named: K.Colors.inProgressBackground)
-        }else{
-            cell.cellBody.backgroundColor = UIColor(named: K.Colors.cellBackground)
-        }
+        cell.textLabel?.text = items[indexPath.row]
+        cell.textLabel?.textColor = UIColor.white
+        cell.backgroundColor = UIColor(named: K.Colors.toDoBackground)
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        var newViewController:UIViewController?
+
+        switch indexPath.row{
+            case 0: newViewController = storyBoard.instantiateViewController(withIdentifier: "event") as! EventViewController
+            newViewController!.title = "Events"
+            case 1: newViewController = storyBoard.instantiateViewController(withIdentifier: "staff") as! StaffViewController
+            newViewController!.title = "Staffs"
+            case 2: newViewController = storyBoard.instantiateViewController(withIdentifier: "customer") as! CustomerViewController
+            newViewController!.title = "Customers"
+            case 3: newViewController = storyBoard.instantiateViewController(withIdentifier: "equipment") as! EquipmentViewController
+            newViewController!.title = "Equipments"
+            case 4: newViewController = nil
+            case 5: newViewController = nil
+            case 6: newViewController = storyBoard.instantiateViewController(withIdentifier: "setting") as! SettingViewController
+            newViewController!.title = "Settings"
+            default:()
+        }
+        if let nvc = newViewController{
+           self.navigationController?.pushViewController(nvc, animated: true)
+        }
     }
 
     /*
@@ -88,14 +108,12 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
-
+    /*
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
     */
-
 }
